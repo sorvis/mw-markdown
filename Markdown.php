@@ -114,7 +114,7 @@ class MarkdownExtension
 
         // Post-Markdown wiki parsing
         $html = $parser->replaceVariables($html);
-        $html = $parser->doDoubleUnderscore($html);
+        //$html = $parser->doDoubleUnderscore($html);
 
         // Parse Markdown
         $html = static::getParser()->text($html);
