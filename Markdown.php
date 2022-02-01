@@ -129,14 +129,14 @@ class MarkdownExtension
                 return sprintf($external ? '[%s %s]' : '[[%s|%s]]', $url, $text);
             }, $html);
 
-            $html = $parser->replaceInternalLinks($html);
-            $html = $parser->replaceExternalLinks($html);
-            $parser->replaceLinkHolders($html);
+            //$html = $parser->replaceInternalLinks($html);
+            //$html = $parser->replaceExternalLinks($html);
+            //$parser->replaceLinkHolders($html);
         }
 
         // Post-Markdown wiki parsing
-        $html = $parser->formatHeadings($html, $text);
-        $html = $parser->doMagicLinks($html);
+        //$html = $parser->formatHeadings($html, $text);
+        //$html = $parser->doMagicLinks($html);
 
         return $html;
     }
